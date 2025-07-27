@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom classes */
+.glassmorphism {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.holographic {
+  background-image: linear-gradient(135deg, #ff00cc, #3333ff);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
